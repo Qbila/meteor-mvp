@@ -1,0 +1,20 @@
+#rightSidebar .a-location
+  {position: relative; border-radius: 5px;}
+
+#rightSidebar .a-location img
+  {width: 100%; border-radius: 3px;}
+
+#rightSidebar .a-location .a-name
+  {position: absolute; width: 100%; text-align: center; bottom: 5px; background-color:rgba(0, 0, 0, 0.5); line-height: 1; border: 1px solid #707070; padding: 5px;}
+
+#rightSidebar .a-location .a-name span
+  {display: inline-block; color: #f5f5f5;}
+
+#rightSidebar .a-location .a-name .a-city
+  {font-size: 18px; text-transform: uppercase;}
+
+#rightSidebar .a-location .a-name .a-city span
+  {line-height: 1.2;}
+
+#rightSidebar .a-location .a-name .a-locality
+  {text-transform: capitalize; font-size: 13px;}
