@@ -6,7 +6,6 @@
 
 meteor-platform
 insecure
-pcjpcj2:ratchet
 iron:router
 http
 twbs:bootstrap
