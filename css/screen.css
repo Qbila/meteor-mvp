@@ -10,6 +10,9 @@
 
 html
 	{background: #ffffff;}
+
+body {font-family: 'Roboto';}
+
 ul, ol
 	{list-style: none; padding: 0; margin: 0;}
 
@@ -27,7 +30,8 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
-
+a.logo
+	{font-size: 35px; color: #ffffff;}
 
 
 
@@ -45,9 +49,11 @@ a:hover, a:focus {
 	.container {width: 976px;}
 }
 
+/*
 .navbar-brand {
 	padding: 15px 0px;
 }
+*/
 
 .btn-white {
   background: #fff;
@@ -100,8 +106,10 @@ a:hover, a:focus {
   background-color: #942a25 \9;
 }
 
-header
-	{background: #ffffff;}
+header.navbar
+	{background: #0094FF; margin-bottom: 0px;}
+
+
 
 a.navbar-brand
 	{display: inline-block;}
@@ -116,10 +124,13 @@ a.navbar-brand img
 	{background-color: #E04F48; color: #f5f5f5;}
 
 header a
-	{color: #404040;}
+	{color: #ffffff;}
 
 header.navbar
 	{border-bottom: 1px solid #e5e5e5;}
+
+header	.navbar-toggle
+	{margin-right: 0px;}
 
 .nav > li > a:hover, .nav > li > a:focus
 	{color: #ffffff;}
@@ -220,10 +231,15 @@ header.navbar
 
 @font-face {
 	font-family: 'MyriadPro-Light';
-	src: url('../fonts/MyriadPro-Light.eot');
-	src: url('../fonts/MyriadPro-Light.eot?#iefix') format('embedded-opentype'),
-	     url('../fonts/MyriadPro-Light.woff') format('woff'),
-	     url('../fonts/MyriadPro-Light.ttf') format('truetype');
+	src: url('/fonts/MyriadPro-Light.eot');
+	src: url('/fonts/MyriadPro-Light.eot?#iefix') format('embedded-opentype'),
+	     url('/fonts/MyriadPro-Light.woff') format('woff'),
+	     url('/fonts/MyriadPro-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('/fonts/Roboto-Regular.ttf') format('truetype');
 }
 
 .myriadpro-light {
@@ -383,3 +399,106 @@ header.navbar
 /*****************************************************************/
 /********************** END: SCREEN.CSS ************************/
 /*****************************************************************/
+
+.a-organisationLinks a { text-transform: capitalize;}
+.a-organisationLinks a:first-child {}
+.a-socialLinks a {font-size: 24px; color: #404040; margin-right: 10px;}
+.a-socialLinks a:hover {text-decoration: none;}
+
+.d-unit {
+  border: 1px solid #d5d5d5;
+  -moz-box-shadow: 0 0 3px rgba(217, 216, 216, 1);
+  -webkit-box-shadow: 0 0 3px rgba(217, 216, 216, 1);
+  box-shadow: 0 0 3px rgba(217, 216, 216, 1);
+
+  padding: 10px;
+}
+
+.a-organisationInfo {
+  padding-left: 60px;
+  position: relative;
+  min-height: 50px;
+}
+
+.a-organisationInfo .d-image {
+  width: 50px; height: 50px; position: absolute; left: 0px;
+}
+
+.a-actionableServices .a-organisationInfo {
+  padding-left: 50px;
+  position: relative;
+  min-height: 40px;
+}
+
+.a-actionableServices .a-organisationInfo .d-image,
+.a-actionableIssues .a-organisationInfo .d-image {
+  width: 40px; height: 40px; position: absolute; left: 0px;
+}
+
+.a-organisationLogoSmall {
+  width: 40px; height: 40px; display: inline-block;
+}
+
+.a-organisationLogoSmall img,
+.a-organisationInfo .d-image img {
+  width: 100%;
+}
+
+.d-metaInfo a, .d-metaInfo {
+  color: #808080;
+  font-size: 12px;
+}
+
+.a-actionableServices .d-unit .d-content {
+  margin-top: 10px;
+}
+
+.a-actionableServices .d-unit .d-callToAction {
+  margin-top: 10px;
+}
+
+.a-actionableIssues .d-unit .d-content {
+  font-size: 20px;
+}
+
+.a-resolvedIssues .d-content,
+.a-actionableServices .d-content
+	{font-size: 13px;}
+
+.d-labels {margin-top: 5px;}
+
+.a-actionableServices .d-unit, .a-actionableIssues .d-unit {margin-bottom: 15px;}
+
+.a-actionableIssues .d-unit {}
+
+.nav>li>a:hover, .nav>li>a:focus {background-color: rgba(255, 255, 255, 0.3); border-color: rgb(116, 231, 252);}
+
+@media (min-width: 768px) {
+	.navbar-nav>li>a {padding-bottom: 13px; border-bottom: 3px solid transparent; padding-top: 18px;}
+}
+
+.a-actionableIssues .d-unit .a-organisations {margin-top: 5px;}
+.a-actionableIssues .d-unit .a-organisations a {}
+.a-postMedia {margin-top: 15px;}
+.a-postMedia .d-image img {width: 100%;}
+
+.a-resolvedIssues a {color: #404040;}
+.a-resolvedIssues a:hover {text-decoration: none;}
+.a-resolvedIssues .d-unit {margin-bottom: 15px;}
+
+.a-resolvedIssues .d-unit {font-size: 12px;}
+
+.a-locationInfo .a-geographicHierarchy,
+.a-locationInfo .a-loction
+  {margin-top: 5px; line-height: 1;}
+
+
+.a-contextTitle
+	{border-bottom: 1px dashed #d5d5d5; padding: 10px;}
+
+.a-contextTitle	h1
+	{margin: 0px; display: inline-block; font-size: 30px;}
+
+.a-contextTitle .a-helpText {color: #808080; margin-left: 5px;}
+
+.a-mainContent {margin-top: 15px;}
