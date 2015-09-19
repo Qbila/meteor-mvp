@@ -1,0 +1,3 @@
+Session.set({
+  place : 'shimla'
+});

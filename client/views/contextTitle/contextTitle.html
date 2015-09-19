@@ -5,16 +5,17 @@
   <div class="a-contextTitle">
     <div class="container">
       <div class="row">
-        <div class="col-sm-7 col-md-9">
+        <div class="col-sm-8 col-md-9">
           <h1 class="myriadpro-light">
-            Act
+            {{ contextTitle }}
+            <!-- {{ TitleAndContext }} -->
           </h1>
           <span class="a-helpText" style="">
-            Actionable information
+            {{ contextInfo }}
           </span>
         </div>
-        <div class="hidden-xs col-sm-5 col-md-3">
-          <div class="input-group">
+        <div class="hidden-xs col-sm-4 col-md-3">
+          <div class="input-group input-group-sm">
             <input type="text" class="form-control" placeholder="Search for...">
             <span class="input-group-btn">
               <button class="btn btn-primary" type="button">Go!</button>

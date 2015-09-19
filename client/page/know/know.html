@@ -1,0 +1,48 @@
+<template name="know">
+
+  {{ >contextTitle }}
+
+  <div class="container a-mainContent">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="d-title clearfix">
+            <span class="pull-left">Status &amp; Impact</span>
+          </div>
+
+          <div class="a-resolvedIssues">
+            {{ >statusNImpact }}
+          </div>
+        </div>
+        <div class="col-sm-6" style="border-left: 1px dashed #d5d5d5;">
+          <div class="a-actionableIssues">
+            <div class="d-title clearfix">
+              <span class="pull-left">Local Issues</span>
+              <!--
+              <a class="btn btn-xs btn-default">Local</a>
+              <a class="btn btn-xs btn-default">State</a>
+              <a class="btn btn-xs btn-default">National</a>
+            -->
+              <span class="pull-right" style="font-size: 12px; font-weight: normal;">
+                <b style="font-size: 110%;">5</b> /7 votes</span>
+            </div>
+
+            {{ >localIssues }}
+
+          </div>
+        </div>
+
+
+        <div class="col-sm-3" style="border-left: 1px dashed #d5d5d5;">
+          <div class="a-actionableServices">
+            <div class="d-title">Service Updates</div>
+
+            {{ >serviceUpdates }}
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+</template>
