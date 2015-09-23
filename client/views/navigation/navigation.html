@@ -1,130 +1,67 @@
 <template name="navigation">
 
-  <!-- Sidebar -->
-  <div id="sidebar-wrapper">
-      <ul class="sidebar-nav">
-          <li class="sidebar-brand">
-              <a href="#">
-                  Start Bootstrap
-              </a>
-          </li>
-          <li>
-              <a href="#">Dashboard</a>
-          </li>
-          <li>
-              <a href="#">Shortcuts</a>
-          </li>
-          <li>
-              <a href="#">Overview</a>
-          </li>
-          <li>
-              <a href="#">Events</a>
-          </li>
-          <li>
-              <a href="#">About</a>
-          </li>
-          <li>
-              <a href="#">Services</a>
-          </li>
-          <li>
-              <a href="#">Contact</a>
-          </li>
-      </ul>
+<!--
+  <div id="mobile-header">
+    <a id="responsive-menu-button" href="#sidr-main">Menu</a>
   </div>
-  <!-- /#sidebar-wrapper -->
-
+-->
 
   <header class="navbar" style="border-radius: 0px;">
-  	<div class="container">
-  		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <div class="navbar-header">
-        <a href="javascript:void(0)" class="btn btn-default btn-sm" id="menu-toggle">Toggle Menu</a>
+    <div class="a-contextTitle">{{ contextTitle }}</div>
+  	<div class="container clearfix">
+  		<div class="navbar-header hidden-xs">
   			<a class="navbar-brand logo" href="https://www.qbila.org" title="Socializing Governance">
           Qbila
         </a>
   		</div>
-      <nav class="navbar-collapse collapse" role="navigation" id="navbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="/act">Act</a></li>
-          <li><a href="/know">Know</a></li>
-          <!--
-          <li><a href="https://www.qbila.org/login">Login</a></li>
-		      <li><a href="https://www.qbila.org/signup" style="padding-right: 0px">Signup</a><li>
-          -->
-        </ul>
-      </nav>
-  	</div>
-  </header>
-
-<!--
-  <header class="navbar navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="row" style="position: relative;">
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <div>
-            {{>logoAndContextSwitch}}
-
-            <!- - <div class="navbar-left">
-            <a class="navbar-brand">Qbila</a>
-              <a class="link hidden-xs btn" href="{{pathFor 'home'}}">Home</a>
-              <a class="link hidden-xs btn" href="{{pathFor 'about'}}">About</a>
-            </div>-->
-
-<!--
-          </div>
-        </div>
-        <div class="hidden-xs col-sm-8 col-md-9">
-          <!- - possible filters block -->
-
-<!--
-          <div>
-            <ul class="nav navbar-nav">
-
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-xs-6 hidden-sm hidden-md hidden-lg">
-
-          <div class="">
-            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+      <div class="navbar-header visible-xs-inline-block pull-left">
+        <div class="d-sidebarLogo clearfix" id="mobile-header">
+          <a id="responsive-menu-button" href="#sidr-main">
+            <button class="navbar-toggle pull-left" type="button">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-          </div>
+            <span class="navbar-brand logo pull-left" title="Socializing Governance">
+              Qbila
+            </span>
+          </a>
         </div>
-
-        <div class="hidden-xs a-gearButton">
-          <div class="dropdown" title="">
-            <a class="glyphicon glyphicon-cog dropdown-toggle" data-toggle="dropdown" aria-expanded="false"></a>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Activity Log</a></li>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">News Feed Preferences</a></li>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Settings</a></li>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Help</a></li>
-              <li role="presentation">
-                <a role="menuitem" tabindex="-1" href="#">Logout</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <nav class="navbar-collapse collapse" role="navigation" id="navbar">
-          <ul class="nv navbar-nav navbar-right hidden-sm hidden-md hidden-lg">
-            <li>M</li>
-            <li>L</li>
-          </ul>
-        </nav>
-      </div>
-
-    </div>
+  		</div>
+      <button class="navbar-toggle glyphicon glyphicon-option-vertical" type="button" data-toggle="collapse" data-target=".navbar-collapse"></button>
+  	</div>
+    <nav class="navbar-collapse collapse" role="navigation" id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/act">Act</a></li>
+        <li><a href="/know">Know</a></li>
+      </ul>
+    </nav>
   </header>
--->
+
+  <div id="navigation" style="display: none;">
+    <nav class="nav">
+        <ul>
+            <li><a href="#download">Download</a></li>
+            <li><a href="#getstarted">Get started</a></li>
+            <li><a href="#usage">Demos &amp; Usage</a></li>
+            <li><a href="#documentation">Documentation</a></li>
+            <li><a href="#themes">Themes</a></li>
+            <li><a href="#support">Support</a></li>
+        </ul>
+    </nav>
+  </div>
+
+  <style>
+    #mobile-header {
+        display: none;
+    }
+
+    @media only screen and (max-width: 767px){
+        #mobile-header {
+            display: block;
+        }
+    }
+  </style>
 
 </template>

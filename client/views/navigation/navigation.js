@@ -1,11 +1,9 @@
-$("#menu-toggle").click(function(e) {
-    e.preventDefault();
-    $("#wrapper").toggleClass("toggled");
-});
 
-$(document).on('click', '#menu-toggle', function(e){
-  e.preventDefault();
-  $("#wrapper").toggleClass("toggled");
-});
+Template.navigation.onRendered(function(){
+  $('#responsive-menu-button').sidr({
+    name: 'sidr-main',
+    source: '#navigation'
+  });
 
-console.log($("#menu-toggle"));
+  // $('.d-sidebarLogo').
+});

@@ -499,3 +499,47 @@ header	.navbar-toggle
 .a-contextTitle .a-helpText {color: #808080; margin-left: 5px;}
 
 .a-mainContent {margin-top: 15px;}
+
+.a-slideContainer .a-slide {
+	white-space: nowrap; position: relative;
+	background-color: #ffffff; text-align: center; padding: 80px 0px;
+}
+
+.a-slideContainer .a-slide:before
+	{
+		content: " "; display: inline-block; height: 100%; vertical-align: middle;
+		margin-right: -0.25em;
+	}
+
+.a-slide .a-slideContent
+	{
+		white-space: normal; display: inline-block; vertical-align: middle;
+		width: 100%; max-width: 980px;
+	}
+
+.a-slide .a-nextSlide  {position: absolute; width: 100%; bottom: 15px; color: #ffffff;}
+
+.a-slide.a-slide-striking {max-height: 505px;}
+
+.a-slideContent h1 {
+	color: #f5f5f5; font-weight: lighter; letter-spacing: 1px; font-size: 50px;
+}
+
+
+.a-infoLine {
+	display: inline-block; width: 80px; height: 80px;
+	border-radius: 50%; -moz-border-radius: 50%;
+	-webkit-border-radius: 50%; border: 1px solid #8ED0FF;
+	text-align: center; margin-left: 20px; background: #0094FF;
+	color: #ffffff;
+}
+.a-infoLine:first-child {margin-left: 0px;}
+.a-infoLine:hover {background: #59B4F5; color: #ffffff;}
+
+.a-infoLine .d-text
+	{display: inline-block; position: relative; top: 30px; font-size: 15px;}
+
+body > .d-wrapper, body, html {height: 100%;}
+.qbilaMain {padding-top: 100px; height: 100%; padding-bottom: 60px;}
+.qbilaMain > div {padding: 0px 10px;}
+.qbilaMain .a-actionableIssues {height: 100%; overflow-y: scroll;}
