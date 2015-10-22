@@ -1,0 +1,128 @@
+<template name="story">
+
+  <style>
+  .d-unit .a-areaContext {color: #808080; font-size: 12px; margin-bottom: 5px;}
+  .a-allHeadlines .a-headline {position: relative; padding-left: 67px; min-height: 60px;}
+  .a-headline .d-content .d-title {font-size: 20px; margin-bottom: 5px; line-height: 1.2; color: #404040; display: inline-block;}
+  .a-headline .d-content .d-title:hover {text-decoration: none; color: #202020;}
+
+  .a-headline .d-image {
+    position: absolute; left: 0px; width: 60px;
+    height: 70px; background-color: red; color: #ffffff;
+    font-weight: bold; text-align: center; padding-top: 20px;
+    font-size: 14px; overflow: hidden;
+  }
+  .a-headline .d-image .a-department {letter-spacing: 1px;}
+  .a-headline .d-image .d-regionContext {
+    font-weight: normal; position: absolute; width: 100%; bottom: 0px;
+    border-top: 1px dotted #ffffff;
+  }
+
+  .d-engagement .d-upVote, .d-engagement .d-expressions {
+    display: inline-block; padding: 2px 10px; border: 1px solid #d5d5d5; font-size: 12px;
+  }
+
+  .d-engagement .d-upVote {
+    background: #D1E7F7;
+  }
+
+  .d-engagement .d-upVote .d-count {font-weight: bold;}
+
+  .a-headline .d-meta {font-size: 12px; color: #808080; margin-bottom: 5px;}
+
+  .d-media .a-image {max-height: 400px;}
+  .d-media {margin-bottom: 8px;}
+  .a-storyDetails .d-unit .d-detailed {margin-top: 10px; font-size: 13px;}
+  </style>
+
+  <div class="a-storyDetails">
+    <div class="d-unit">
+      <div class="a-headline">
+
+        <div class="d-content">
+          <a class="d-title" href="/story">GSLV Successfully Launches India’s Latest Communication Satellite GSAT-6</a>
+          <div class="d-media">
+            <div class="a-image" style="background: url('/img/systemData/org/isro/gsat.jpg') no-repeat; width: 100%; height: 260px; background-position: center center; background-size: cover;"></div>
+          </div>
+          <div class="d-meta a-areaContext">
+            <b>ISRO</b>
+            &middot;
+            12 hrs ago
+            &middot;
+            <span class="a-city">Banglore</span>
+          </div>
+          <div class="d-engagement">
+            <span class="d-upVote" style="">
+              <span class="d-text">Vote Up</span>
+              &middot;
+              <span class="d-count">23</span>
+            </span>
+            <span class="d-expressions">
+              <span class="d-text">Express</span>
+              &middot;
+              <span class="d-count">12</span>
+            </span>
+          </div>
+        </div>
+        <div class="d-detailed">
+          <p>In its ninth flight (GSLV-D6) conducted today, (August 27, 2015), India's Geosynchronous Satellite Launch Vehicle,
+          equipped with the indigenous Cryogenic Upper Stage (CUS), successfully launched GSAT-6, the country's latest
+          communication satellite, into a Geosynchronous Transfer Orbit (GTO).  The achieved orbit is very close to the
+          intended one.   The launch took place from the Second Launch Pad at the Satish Dhawan Space Centre SHAR (SDSC SHAR),
+          Sriharikota, the spaceport of India. This was the fifth developmental flight of GSLV and the third to carry the
+          indigenous CUS.  GSLV-D6 was intended to further test and qualify the CUS developed by ISRO.
+          </p>
+          <p>
+          In its oval shaped
+          GTO, the GSAT-6 satellite is now orbiting the Earth with a perigee (nearest point to Earth) of 168 km and an
+          apogee (farthest point to Earth) of    35,939 km with an orbital inclination of 20.01 deg with respect to the
+          equator.
+          </p>
+          <p>
+          After a smooth 29 hour countdown, the 416 tonne, 49 m tall GSLV-D6 carrying the 2117 kg GSAT-6, lifted
+          off at 16:52 Hrs IST. About seventeen minutes after lift-off, GSAT-6 was successfully placed in GTO.
+          </p>
+          <p>
+          At 4.8
+          seconds before the countdown reached zero, the four liquid propellant strap-on stages of GSLV-D6, each carrying
+          42 tonne of liquid propellants, were ignited. At count zero and after confirming the normal performance of all
+          the four strap-on motors, the mammoth      139 tonne solid propellant first stage core motor was ignited and GSLV
+           lifted off. The major phases of the flight included the core motor burn-out, strap on burn-out, ignition of the
+           second stage, separation of the core motor together with strap-ons, payload fairing separation, second stage
+           separation, CUS ignition and its timely shut down after satisfactory performance.  Following this, GSAT-6 separated
+           from CUS about 17 minutes after launch.
+           </p>
+           <p>
+           Soon after its injection into GTO, the two solar arrays of GSAT-6 were
+           automatically deployed and the Master Control Facility (MCF) at Hassan in Karnataka took control of GSAT-6.
+           </p>
+           <p>
+           In the
+           coming days, GSAT-6's orbit will be raised from its present GTO to the final circular Geostationary Orbit (GSO) by
+           firing the satellite's Liquid Apogee Motor (LAM) in stages. The satellite will be commissioned into service after
+           the completion of orbit raising operations, deployment of its 6 m wide sieve shaped unfurlable antenna, the
+           satellite’s positioning  in its designated orbital slot of 83 degree East longitude in the GSO and in-orbit testing
+           of its communication payloads.
+           </p>
+           <p>
+           Today’s flight of GSLV underscores the success of ISRO in mastering the highly
+           complex cryogenic rocket propulsion technology.
+           </p>
+        </div>
+      </div>
+      <div class="d-engagement">
+        <span class="d-upVote" style="">
+          <span class="d-text">Vote Up</span>
+          &middot;
+          <span class="d-count">23</span>
+        </span>
+        <span class="d-expressions">
+          <span class="d-text">Express</span>
+          &middot;
+          <span class="d-count">12</span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+</template>

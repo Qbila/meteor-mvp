@@ -91,10 +91,10 @@ a.logo {font-size: 35px; color: #0094FF;}
   {color: #ffffff; font-size: 20px; padding: 5px 10px;}
 
 .d-mobileSubNav li, .d-mobileFooterNav li {border-left: 1px solid #808080; background: #ffffff;}
-.d-mobileSubNav li {border-bottom: 1px solid #808080; }
-.d-mobileFooterNav li {border-top: 1px solid #808080; }
+.d-mobileSubNav li {border-bottom: 1px solid #808080; padding: 0px;}
+.d-mobileFooterNav li {border-top: 1px solid #808080; padding: 0px;}
 .d-mobileSubNav li:hover, .d-mobileFooterNav li:hover {background: #f5f5f5;}
-.d-mobileSubNav a , .d-mobileFooterNav a {padding: 10px; color: #404040; display: inline-block; width: 100%;}
+.d-mobileSubNav a , .d-mobileFooterNav a {padding: 7px 10px; color: #404040; display: inline-block; width: 100%; font-size: 12px; font-weight: bold;}
 
 
 header.navbar .a-contextTitle {

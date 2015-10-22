@@ -1,0 +1,19 @@
+<template name="profileLayout">
+
+  <div class="d-wrapper clearfix d-profileLayout">
+    <div class="" style="position: fixed; width: 100%; z-index: 1;">
+      {{ > navigation }}
+    </div>
+    <div class="qbilaMain">
+      <div class="a-userProfile">
+        {{ > userBasicInfo }}
+
+        {{ > profileNav }}
+
+        {{ > yield}}
+      </div>
+    </div>
+    {{ > mobileFooterNav }}
+  </div>
+
+</template>

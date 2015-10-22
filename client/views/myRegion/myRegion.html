@@ -1,0 +1,45 @@
+<template name="myRegion">
+
+  <div class="">
+    <span class="d-title" style="margin-bottom: 10px; display: inline-block;">My Region</span>
+
+    <div id="municipality">
+      <img src="/img/systemData/user/maps/municipality.png" style="width: 100%;" />
+      <div class="">
+        <b>Municipal Cooperation of Delhi</b>
+
+      </div>
+    </div>
+    <div id="zone" style="display: none;">
+      <img src="/img/systemData/user/maps/zone.png" style="width: 100%;" />
+      <div class="">
+        <b>Central Delhi Municipality Cooperation</b>
+        
+      </div>
+    </div>
+    <div id="ward" style="display: none;">
+      <img src="/img/systemData/user/maps/ward.png" style="width: 100%;" />
+      <div class="">
+        <b>Lajpat Nagar Ward</b>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $('#municipality').on('click', function(){
+      $(this).hide();
+      $('#zone').show();
+    });
+
+    $('#zone').on('click', function(){
+      $(this).hide();
+      $('#ward').show();
+    });
+
+    $('#ward').on('click', function(){
+      $(this).hide();
+      $('#municipality').show();
+    });
+  </script>
+
+</template>

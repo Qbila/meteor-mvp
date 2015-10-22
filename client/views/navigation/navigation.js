@@ -5,5 +5,10 @@ Template.navigation.onRendered(function(){
     source: '#navigation'
   });
 
+  $('.a-followedCities a').on('click', function(){
+    $('.a-followedCities a').removeClass('a-active');
+    $(this).addClass('a-active');
+  });
+
   // $('.d-sidebarLogo').
 });
