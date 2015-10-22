@@ -13,6 +13,8 @@ html
 
 body {font-family: 'Roboto';}
 
+body .fa {color: #ffffff;}
+
 ul, ol
 	{list-style: none; padding: 0; margin: 0;}
 
@@ -407,9 +409,16 @@ header	.navbar-toggle
   -moz-box-shadow: 0 0 3px rgba(217, 216, 216, 1);
   -webkit-box-shadow: 0 0 3px rgba(217, 216, 216, 1);
   box-shadow: 0 0 3px rgba(217, 216, 216, 1);
-
   padding: 10px;
 }
+
+.a-allAlerts .d-unit {
+	border: 1px solid #fc3d32;
+	-moz-box-shadow: 0 0 10px #fc3d32;
+	-webkit-box-shadow: 0 0 10px #fc3d32;
+	box-shadow: 0 0 10px #fc3d32;
+}
+
 
 .a-organisationInfo {
   padding-left: 60px;
@@ -455,7 +464,7 @@ header	.navbar-toggle
 }
 
 .a-actionableIssues .d-unit .d-content {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .a-resolvedIssues .d-content,
@@ -540,6 +549,118 @@ header	.navbar-toggle
 	{display: inline-block; position: relative; top: 30px; font-size: 15px;}
 
 body > .d-wrapper, body, html {height: 100%;}
-.qbilaMain {padding-top: 100px; height: 100%; padding-bottom: 60px;}
-.qbilaMain > div {padding: 0px 10px;}
+.qbilaMain {padding-top: 84px; height: 100%; padding-bottom: 32px;}
+.qbilaMain > div {padding: 15px 10px; height: 100%; overflow-y: scroll;}
 .qbilaMain .a-actionableIssues {height: 100%; overflow-y: scroll;}
+
+header.navbar .fa {font-size: 18px; padding: 15px;}
+.a-navbarIcons {padding-left: 7px; padding-right: 0px;}
+
+.d-homeLayout .qbilaMain,
+.d-profileLayout .qbilaMain
+	{padding-top: 52px;}
+
+.a-followedCities .fa-check {display: none;}
+.a-followedCities .fa {margin-top: 12px; padding: 5px; margin-left: 7px;}
+.a-followedCities .a-active .fa-check {display: inline-block;}
+.a-followedCities .a-active {background: #59B4F5;}
+.fa .fa-map-marker {}
+
+.a-notifications {
+	margin-top: 12px; padding: 5px; display: inline-block; font-size: 12px;
+	line-height: 1; background: #ffffff; color: #404040; border: 1px solid #0094FF;
+}
+
+.navbar-collapse {
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+a.fa:hover {text-decoration: none;}
+
+
+.d-unit .a-areaContext {color: #808080; font-size: 12px; margin-bottom: 5px;}
+
+.a-allHeadlines .a-headline,
+.a-allAlerts .a-headline {
+	position: relative; padding-left: 70px; min-height: 70px;
+}
+
+.a-headline .d-content .d-title {font-size: 15px; margin-bottom: 5px; line-height: 1.2; color: #404040;}
+.a-headline .d-content .d-title:hover {text-decoration: none; color: #202020;}
+
+.a-callToAction {
+	padding-top: 7px;
+}
+
+.a-headline .d-image {
+	position: absolute; left: 0px; width: 60px;
+	height: 70px; color: #ffffff;
+	font-weight: bold; text-align: center; padding-top: 20px;
+	font-size: 14px; overflow: hidden;
+}
+
+.a-headline .d-image.a-national {background-color: rgb(204, 0, 0);}
+.a-headline .d-image.a-state {background-color: #4ca64c;}
+.a-headline .d-image.a-district {background-color: #3ad2ff;}
+.a-headline .d-image.a-municipal {background-color: #FFC425;}
+.a-headline .d-image.a-ward {background-color: #505050; color: #e5e5e5;}
+.a-headline .d-image.a-colony {background-color: #e5e5e5; color: #404040;}
+
+.a-headline .d-image .a-department {letter-spacing: 1px;}
+.a-headline .d-image .d-regionContext {
+	font-weight: normal; position: absolute; width: 100%; bottom: 0px;
+	border-top: 1px dotted #ffffff;
+}
+
+.a-allHeadlines .d-engagement {
+	border-top: 1px solid #d5d5d5; margin-top: 8px; padding-top: 8px;
+}
+
+.a-allHeadlines .d-unit {
+	margin-bottom: 10px;
+}
+
+.d-engagement .d-upVote, .d-engagement .d-expressions {
+	display: inline-block; padding: 2px 10px; border: 1px solid #d5d5d5; font-size: 12px;
+}
+
+.d-engagement .d-upVote {
+	background: #D1E7F7;
+}
+
+.d-engagement .d-upVote .d-count {font-weight: bold;}
+
+.a-headline .d-meta {font-size: 12px; color: #808080; margin-bottom: 5px;}
+
+.a-alertCodeRed .a-alertMessage {background: #fc3d32; color: #ffffff; margin: -10px -12px 5px -11px; font-size: 12px; padding: 5px;}
+
+
+.a-userProfile .d-profileNav {margin-top: 10px; margin-bottom: 10px;}
+.a-userProfile .d-profileNav ul li {
+  border-bottom: 1px solid #808080; border-top: 1px solid #808080; border-left: 1px solid #808080;
+  padding: 0px; font-size: 12px;
+}
+.a-userProfile .d-profileNav li a {
+  padding: 10px; display: inline-block; width: 100%; color: #808080;
+}
+
+body .a-sharedInfo .fa {color: #c0c0c0; font-size: 16px; padding: 0px 5px;}
+body .a-sharedInfo .a-active.fa {color: #404040;}
+.a-sharedInfo .a-sharedStatus {}
+
+.a-contributions .d-unit,
+.a-sharedInfo .d-unit {
+	margin-bottom: 10px;
+}
+
+.a-sharedInfo .d-unit > * {padding: 0px 10px; font-size: 12px; font-weight: normal;}
+.a-sharedInfo .d-unit > *:first-child {padding-left: 0px; width: 100px;}
+.a-sharedInfo .d-unit > *:last-child {padding-right: 0px;}
+
+.d-engagement .fa {
+	color: #000000;
+}
+
+
+.a-followed .d-unit {margin-bottom: 10px;}
