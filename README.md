@@ -1,2 +1,2 @@
 # qbila
-code live on qbila.org
+initial mvp. phased out now.
